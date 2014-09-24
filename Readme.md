@@ -10,6 +10,7 @@ The goal of this assignment is to create a Yelp App which reads actual data from
 Number of Hours Taken: 18
 
 All Required Stores Completed:
+
     - Search results page
         - Table rows should be dynamic height according to the content height
         - Custom cells should have the proper Auto Layout constraints
