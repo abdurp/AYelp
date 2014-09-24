@@ -38,5 +38,5 @@ Open Source Libraries:
     - AFNetworking
     - BDBOAuth1Manager
 
-GIF Walkthrough:
-
+GIF Walkthrough (created using LiceCap):
+![YelpGIF-AbdurR.gif](https://github.com/abdurp/AYelp/blob/master/YelpGIF-AbdurR.gif)
