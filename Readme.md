@@ -29,18 +29,18 @@ All Required Stores Completed:
         - Clicking on the "Search" button should dismiss the filters page and trigger the search w/ the new filter settings.
 
 Known Issues:
+
     - On setting a filter switch on a row other than 0, row 0 is always displayed (even though the switch is correctly selected)
-    
         - I tried using reloadRowsAtIndexPaths but it kept crashing with all possible values
 
 Installation:
-    - Run "pod install" on the command line
-    
+
+    - Run "pod install" on the command line 
     - Build on Xcode 6 GM and deploy on iPhone 5 / 5S / 6 / 6Plus
 
 Open Source Libraries:
+
     - AFNetworking
-    
     - BDBOAuth1Manager
 
 GIF Walkthrough (created using LiceCap):
