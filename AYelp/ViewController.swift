@@ -147,21 +147,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         return cell
     }
     
-//    func filterContentForSearchText(searchText: String)
-//    {
-//        client.searchWithTerm(searchText, success: { (operation: AFHTTPRequestOperation!, response: AnyObject!) -> Void in
-//            //println(response)
-//            var biz = response as NSDictionary
-//            //let dictionary = NSJSONSerialization.JSONObjectWithData(response as NSData, options: nil, error: nil) as NSDictionary
-//            self.filteredRestaurants = biz["businesses"] as [NSDictionary]
-//            self.tableView.reloadData()
-//            }) { (operation: AFHTTPRequestOperation!, error: NSError!) -> Void in
-//                println(error)
-//        }
-//
-//        
-//    }
-//    
+
     func searchBarSearchButtonClicked(searchBar: UISearchBar) {
         
         println("in search bar: \(searchBar.text)")
@@ -193,7 +179,6 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
                     println(error)
             }
             
-            //view.endEditing(true)
             
         }
         return true
@@ -213,11 +198,6 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     
     func searchTermDidChange(filtersDictionary: NSDictionary) {
         
-        //if(isDeals) {
-            
-        //    filtersDictionary["deals_filter"] = "true"
-            
-        //}
         
         client.searchWithFilters(filtersDictionary, success: { (operation: AFHTTPRequestOperation!, response: AnyObject!) -> Void in
             //println(response)

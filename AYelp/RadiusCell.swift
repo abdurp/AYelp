@@ -8,8 +8,16 @@
 
 import UIKit
 
+protocol RadiusCellDelegate {
+    func radiusCell(radiusCell: RadiusCell, didChangeValue value: Bool) -> Void
+}
+
 class RadiusCell: UITableViewCell {
 
+    @IBOutlet weak var radiusLabel: UILabel!
+    @IBOutlet weak var radiusSwitch: UISwitch!
+    var delegate: RadiusCellDelegate?
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
@@ -21,4 +29,7 @@ class RadiusCell: UITableViewCell {
         // Configure the view for the selected state
     }
 
+    @IBAction func onRadiusSwitch(sender: AnyObject) {
+        delegate?.radiusCell(self, didChangeValue: radiusSwitch.on)
+    }
 }

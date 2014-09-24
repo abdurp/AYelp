@@ -8,9 +8,17 @@
 
 import UIKit
 
+protocol SortByCellDelegate {
+    func sortByCell(sortByCell: SortByCell, didChangeValue value: Bool) -> Void
+}
+
 class SortByCell: UITableViewCell {
 
-    @IBOutlet weak var sortbyLabel: UIView!
+    @IBOutlet weak var sortbyLabel: UILabel!
+    @IBOutlet weak var sortBySwitch: UISwitch!
+    
+    var delegate: SortByCellDelegate?
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
@@ -20,6 +28,13 @@ class SortByCell: UITableViewCell {
         super.setSelected(selected, animated: animated)
 
         // Configure the view for the selected state
+    }
+    
+    
+    
+    @IBAction func onSortBySwitch(sender: AnyObject) {
+        delegate?.sortByCell(self, didChangeValue: sortBySwitch.on)
+        
     }
 
 }

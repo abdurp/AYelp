@@ -168,13 +168,13 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Offering a Deal?" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="utp-bi-PGR">
-                                                    <rect key="frame" x="72" y="36" width="142" height="26"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <rect key="frame" x="31" y="12" width="173" height="26"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Csd-gO-C8R">
-                                                    <rect key="frame" x="258" y="31" width="51" height="31"/>
+                                                    <rect key="frame" x="225" y="8" width="51" height="31"/>
                                                     <connections>
                                                         <action selector="onSwitch:" destination="CRS-67-BPS" eventType="valueChanged" id="lFV-dY-PSC"/>
                                                     </connections>
@@ -186,22 +186,29 @@
                                             <outlet property="dealsSwitch" destination="Csd-gO-C8R" id="pG6-QL-rsM"/>
                                         </connections>
                                     </tableViewCell>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="SortByCell" id="hdc-YZ-rKf" customClass="SortByCell" customModule="AYelp">
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="SortByCell" rowHeight="140" id="hdc-YZ-rKf" customClass="SortByCell" customModule="AYelp">
                                         <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="hdc-YZ-rKf" id="XwI-7P-xxH">
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
+                                                <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="NEh-Oa-OUV">
+                                                    <rect key="frame" x="253" y="12" width="51" height="31"/>
+                                                    <connections>
+                                                        <action selector="onSortBySwitch:" destination="hdc-YZ-rKf" eventType="valueChanged" id="YCS-FL-FHn"/>
+                                                    </connections>
+                                                </switch>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Sort By" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8cD-bN-dfG">
-                                                    <rect key="frame" x="93" y="8" width="81" height="21"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <rect key="frame" x="30" y="12" width="177" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <outlet property="sortbyLabel" destination="XwI-7P-xxH" id="5j9-OP-pAK"/>
+                                            <outlet property="sortBySwitch" destination="NEh-Oa-OUV" id="GPI-Ho-oQo"/>
+                                            <outlet property="sortbyLabel" destination="8cD-bN-dfG" id="cmx-ZD-TWI"/>
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="RadiusCell" id="XLA-cr-VuJ" customClass="RadiusCell" customModule="AYelp">
@@ -211,13 +218,23 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Radius" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZUu-SM-FWW">
-                                                    <rect key="frame" x="91" y="8" width="53" height="21"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <rect key="frame" x="30" y="8" width="143" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
+                                                <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="m1L-2K-PFm">
+                                                    <rect key="frame" x="250" y="2" width="51" height="31"/>
+                                                    <connections>
+                                                        <action selector="onRadiusSwitch:" destination="XLA-cr-VuJ" eventType="valueChanged" id="XDe-3H-doQ"/>
+                                                    </connections>
+                                                </switch>
                                             </subviews>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="radiusLabel" destination="ZUu-SM-FWW" id="NkB-V4-4r1"/>
+                                            <outlet property="radiusSwitch" destination="m1L-2K-PFm" id="rEp-T1-ll4"/>
+                                        </connections>
                                     </tableViewCell>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="CategoryCell" id="eCm-g7-1zf" customClass="CategoryCell" customModule="AYelp">
                                         <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
@@ -226,13 +243,23 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Category" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qvn-Y0-XmS">
-                                                    <rect key="frame" x="92" y="11" width="91" height="21"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <rect key="frame" x="24" y="11" width="171" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
+                                                <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vTB-fc-TLD">
+                                                    <rect key="frame" x="252" y="4" width="51" height="31"/>
+                                                    <connections>
+                                                        <action selector="categorySwitch:" destination="eCm-g7-1zf" eventType="valueChanged" id="Nkd-H2-a2w"/>
+                                                    </connections>
+                                                </switch>
                                             </subviews>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="categoryLabel" destination="qvn-Y0-XmS" id="PaV-DA-3Yu"/>
+                                            <outlet property="categorySwitch" destination="vTB-fc-TLD" id="IpN-PA-aLj"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
@@ -277,7 +304,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nsI-Cm-QaI" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3507" y="780"/>
+            <point key="canvasLocation" x="3709" y="780"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="p6s-F1-Q88">

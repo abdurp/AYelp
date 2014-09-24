@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		84466A5419D2984000A93440 /* Readme.md in Sources */ = {isa = PBXBuildFile; fileRef = 84466A5219D2984000A93440 /* Readme.md */; };
+		84466A5519D2984000A93440 /* TemplateIcon2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 84466A5319D2984000A93440 /* TemplateIcon2x.png */; };
 		846E368419CFDFF7003589E9 /* FiltersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846E368319CFDFF7003589E9 /* FiltersViewController.swift */; };
 		846E368619CFE240003589E9 /* FiltersCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846E368519CFE240003589E9 /* FiltersCell.swift */; };
 		846E368819CFEC39003589E9 /* SortByCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846E368719CFEC39003589E9 /* SortByCell.swift */; };
@@ -35,6 +37,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		84466A5219D2984000A93440 /* Readme.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = Readme.md; sourceTree = "<group>"; };
+		84466A5319D2984000A93440 /* TemplateIcon2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TemplateIcon2x.png; sourceTree = "<group>"; };
 		846E368319CFDFF7003589E9 /* FiltersViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FiltersViewController.swift; sourceTree = "<group>"; };
 		846E368519CFE240003589E9 /* FiltersCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FiltersCell.swift; path = ../FiltersCell.swift; sourceTree = "<group>"; };
 		846E368719CFEC39003589E9 /* SortByCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SortByCell.swift; sourceTree = "<group>"; };
@@ -80,6 +84,8 @@
 		84D3894019CE6213005027A5 = {
 			isa = PBXGroup;
 			children = (
+				84466A5219D2984000A93440 /* Readme.md */,
+				84466A5319D2984000A93440 /* TemplateIcon2x.png */,
 				84D3894B19CE6213005027A5 /* AYelp */,
 				84D3896119CE6213005027A5 /* AYelpTests */,
 				84D3894A19CE6213005027A5 /* Products */,
@@ -234,6 +240,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84466A5519D2984000A93440 /* TemplateIcon2x.png in Resources */,
 				84D3895419CE6213005027A5 /* Main.storyboard in Resources */,
 				84D3895919CE6213005027A5 /* LaunchScreen.xib in Resources */,
 				84D3895619CE6213005027A5 /* Images.xcassets in Resources */,
@@ -289,6 +296,7 @@
 			files = (
 				84CBDB4C19CE763400551B4E /* AYelp-Bridging-Header.m in Sources */,
 				84D3896F19CE66BF005027A5 /* RestaurantCell.swift in Sources */,
+				84466A5419D2984000A93440 /* Readme.md in Sources */,
 				846E368419CFDFF7003589E9 /* FiltersViewController.swift in Sources */,
 				84D3895119CE6213005027A5 /* ViewController.swift in Sources */,
 				846E368A19CFEF5B003589E9 /* RadiusCell.swift in Sources */,

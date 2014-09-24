@@ -8,8 +8,19 @@
 
 import UIKit
 
+protocol CategoryCellDelegate {
+    func categoryCell(categoryCell: CategoryCell, didChangeValue value: Bool) -> Void
+}
+
 class CategoryCell: UITableViewCell {
 
+    
+    @IBOutlet weak var categoryLabel: UILabel!
+    
+    @IBOutlet weak var categorySwitch: UISwitch!
+    
+    var delegate: CategoryCellDelegate?
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
@@ -21,4 +32,8 @@ class CategoryCell: UITableViewCell {
         // Configure the view for the selected state
     }
 
+    @IBAction func categorySwitch(sender: AnyObject) {
+        delegate?.categoryCell(self, didChangeValue: categorySwitch.on)
+        
+    }
 }
